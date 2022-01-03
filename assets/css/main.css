@@ -1,0 +1,198 @@
+.contenedorDiscoVinilo {
+    /* background: red; */
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e4e4e4;
+
+    position: absolute;
+    transform: rotate3d(1, 1, 1, 290deg);
+}
+
+.texto {
+    position: absolute;
+    left: 0;
+    font: bold 120px fangsong;
+    text-align: center;
+    line-height: 114px;
+    width: 520px;
+    color: #fff;
+    background: red;
+}
+
+.aguaja {
+    width: 50px;
+    height: 650px;
+    background-color: rgb(97, 91, 91);
+    z-index: 100;
+    transform: rotate(90deg);
+
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 300px;
+}
+
+.punta {
+    width: 20px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    transform: rotate3d(30deg);
+}
+
+.discoviniloCapa1 {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 350px rgb(0, 0, 0)!important;
+    z-index: 1;
+
+    /* transform: rotate3d(1, 1, 1, 286deg); */
+    animation: spin 4s linear infinite;
+
+    background-image: url("../img/woman-decorating-christmas-tree-and-delete-2021-text-on-wall-in-new-year-day-2022.jpg");
+    background-position: 40%;
+    background-size: cover;
+}
+
+.circunferencia1 {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px 50px transparent;
+    padding: -50px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circunferencia2, .circunferencia3, .circunferencia4 {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);  
+    box-shadow: 0 0 2px 3px rgb(0, 0, 0, 0.3);
+    opacity: 0.5;
+}
+
+.circunferencia3 {
+    width: 90px;
+    height: 90px;
+    position: absolute;
+}
+
+.circunferencia4 {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(250, 250, 250);  
+    position: absolute;
+}
+
+/* Estilos generales */
+.discoviniloCapa2, .sombraBlanca1, 
+.discoviniloCapa4, .sombraBlanca2, 
+.discoviniloCapa6, .sombraBlanca3, 
+.discoviniloCapa7, .sombraBlanca4, 
+.discoviniloCapa8, .sombraBlanca5,
+.discoviniloCapa9,
+.sombraBlancaTop1,
+.sombraBlancaTop2,
+.sombraBlancaTop3,
+.sombraBlancaTop4,
+.sombraBlancaTop5 {
+    width: 250px;
+    height: 250px;
+    background-color: transparent;
+    border-radius: 50%;
+    /* box-shadow: 0 0 2px 300px rgb(233, 30, 30); */
+}
+
+/* sombra blanca */
+.sombraBlanca1 {
+    box-shadow: -150px 100px 20px 150px rgb(255, 255, 255);
+}
+
+.sombraBlanca2 {
+    box-shadow: -170px 110px 20px 90px rgb(255, 255, 255);
+}
+
+.sombraBlanca3 {
+    box-shadow: -170px 110px 20px 45px rgb(255, 255, 255); 
+}
+
+.sombraBlanca4 {
+    box-shadow: -170px 110px 20px 5px rgb(255, 255, 255);  
+}
+
+.sombraBlanca5 {
+    box-shadow: -170px 110px 20px -45px rgb(255, 255, 255);   
+}
+
+/* Sombras superiores */
+.sombraBlancaTop1, .sombraBlancaTop2, .sombraBlancaTop3, .sombraBlancaTop4, .sombraBlancaTop5 {
+    box-shadow: 150px -100px 20px 150px rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+}
+
+.sombraBlancaTop2 {
+    box-shadow: 170px -110px 20px 90px rgb(255, 255, 255);
+}
+
+.sombraBlancaTop3 {
+    box-shadow: 170px -110px 20px 45px rgb(255, 255, 255); 
+}
+
+.sombraBlancaTop4 {
+    box-shadow: 170px -110px 20px 5px rgb(255, 255, 255);  
+}
+
+.sombraBlancaTop5 {
+    box-shadow: 170px -110px 20px -45px rgb(255, 255, 255);  
+}
+
+/* partes disco vinilo */
+.discoviniloCapa4, .discoviniloCapa6, .discoviniloCapa7, .discoviniloCapa8, .discoviniloCapa9 {
+    position: absolute;
+    top: 0;
+    box-shadow: 0 0 2px 300px rgb(7, 6, 6);
+}
+
+.discoviniloCapa6 {
+    box-shadow: 0 0 2px 250px rgb(0, 0, 0);
+}
+
+.discoviniloCapa7 {
+    box-shadow: 0 0 2px 200px rgb(0, 0, 0); 
+}
+
+.discoviniloCapa8 {
+    box-shadow: 0 0 2px 150px rgb(0, 0, 0); 
+}
+
+.discoviniloCapa9 {
+    box-shadow: 0 0 2px 100px rgb(0, 0, 0); 
+}
+
+
+/* ----Animaciones */
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
